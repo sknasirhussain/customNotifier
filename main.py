@@ -4,15 +4,15 @@ from plyer import notification
 
 if __name__ == "__main__":
     while True:
-        # Check if Google Chrome is running
+        # Check if file is running
         for proc in psutil.process_iter():
-            if proc.name() == "MSIAfterburner.exe":
+            if proc.name() == "addYourFileName.exe":
                 # Display the notification
                 notification.notify(
-                    title = "Focus Asshole",
-                    message = "Focus on your work And and stop playing games. Also close MSI Afterburner",
-                    app_icon = "D:\Python-Projects\Cornmanthe3rd-Plex-Other-python.ico",
-                    timeout = 5
+                    title = "This is the title of the notification",
+                    message = "The message you want in it",
+                    app_icon = "path\to\your\icon",
+                    timeout = 5 # how long you want the message to be seen? (in seconds)
                 )
                 # Wait for 10 minutes before displaying the notification again
                 time.sleep(5)
